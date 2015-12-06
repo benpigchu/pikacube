@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset=utf-8>
+		<link rel="stylesheet" href="css/stage.css"></link>
+		<title>pikacube</title>
+	</head>
+	<body>
+		<div id="controller">
+			<h1 id="title">pikacube</h1>
+			<p>A HTML5 cube by Benpigchu</p>
+			<div id="inputData">
+				<input type="text" name="Load data" id="inData">
+				<select name="Encode method" id="method">
+					<option value="twd">TWD</option>
+					<option value="bpc">BPC</option>
+				</select>
+				<input type="button" value="load" name="load" id="load" class="button">
+			</div>
+			<div id="buttons">
+				<input type="button" value="R" id="R" class="rotate button">
+				<input type="button" value="L" id="L" class="rotate button">
+				<input type="button" value="U" id="U" class="rotate button">
+				<input type="button" value="D" id="D" class="rotate button">
+				<input type="button" value="F" id="F" class="rotate button">
+				<input type="button" value="B" id="B" class="rotate button">
+				<input type="button" value="X" id="X" class="rotate button">
+				<input type="button" value="Y" id="Y" class="rotate button">
+				<input type="button" value="Z" id="Z" class="rotate button">
+				<input type="button" value="solve+play" id="solve" class="no-rotate button">
+				<br>
+				<input type="button" value="Ri" id="Ri" class="rotate button">
+				<input type="button" value="Li" id="Li" class="rotate button">
+				<input type="button" value="Ui" id="Ui" class="rotate button">
+				<input type="button" value="Di" id="Di" class="rotate button">
+				<input type="button" value="Fi" id="Fi" class="rotate button">
+				<input type="button" value="Bi" id="Bi" class="rotate button">
+				<input type="button" value="Xi" id="Xi" class="rotate button">
+				<input type="button" value="Yi" id="Yi" class="rotate button">
+				<input type="button" value="Zi" id="Zi" class="rotate button">
+				<input type="button" value="export" id="export" class="no-rotate button">
+			</div>
+			<div id="output"></div>
+		</div>
+		
+		
+		<div id="box">
+			<div id="canvas"></div>
+		</div>
+		
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r73/three.min.js"></script>
+		<script src="js/const.js"></script>
+		<script src="js/blockdata.js"></script>
+		<script src="js/block.js"></script>
+		<script src="js/cubedata.js"></script>
+		<script src="js/regularsolve.js"></script>
+		<script src="js/cube.js"></script>
+		<script src="js/draw.js"></script>
+		<script src="js/ui.js"></script>
+		<script src="js/starter.js"></script>
+	</body>
+</html>
