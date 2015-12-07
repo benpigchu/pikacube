@@ -17,6 +17,19 @@
 				</select>
 				<input type="button" value="load" name="load" id="load" class="button">
 			</div>
+			<div id="config">
+				<select name="Solve method" id="solve-method" class="config">
+					<option value="regularSolve">CFOP</option>
+				</select>
+				<select name="Answer method" id="ans-method" class="config">
+					<option value="simplify">Simplify</option>
+					<option value="raw">Raw</option>
+					<option value="noI">Without "i"</option>
+					<option value="noXYZ">Without "X","Y","Z"</option>
+					<option value="noXYZI">Without "X","Y","Z","i"</option>
+					<option value="onlyXZU">"X","Z","U" only</option>
+				</select>
+			</div>
 			<div id="buttons">
 				<input type="button" value="R" id="R" class="rotate button">
 				<input type="button" value="L" id="L" class="rotate button">

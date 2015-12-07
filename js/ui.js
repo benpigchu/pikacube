@@ -32,13 +32,15 @@ Cube.prototype.setUi=function(){
 	
 	document.getElementById("solve").addEventListener("click",function(){
 		if(!this.rotating){
+			var solveMethod=document.getElementById("solve-method").value
+			var ansMethod=document.getElementById("ans-method").value
 			var buttonList=document.getElementsByClassName("button")
 			for(var i=0;i<buttonList.length;i++){
 				buttonList[i].disabled=true
 			}
-			var ans=this.cubeData.regularSolve("simplify")
+			var ans=this.cubeData[solveMethod](ansMethod)
 			document.getElementById("output").innerText="Answer is:\n"+ans.join(" ")
-			this.playSolve("simplify",function(){
+			this.playSolve(solveMethod,ansMethod,function(){
 				var buttonList=document.getElementsByClassName("button")
 				for(var i=0;i<buttonList.length;i++){
 					buttonList[i].disabled=false

@@ -94,6 +94,7 @@ OperatorList.prototype.noXYZI=function(){
 }
 
 OperatorList.prototype.onlyXZU=function(){
+	this.noXYZ()
 	var i=0
 	while(i<this.length){
 		if(this[i][0]!="X"&&this[i][0]!="U"&&this[i][0]!="Z"){
