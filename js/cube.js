@@ -74,6 +74,6 @@ Cube.prototype.turnToData=function(callback){
 	this.rotatingNum+=27
 }
 
-Cube.prototype.playSolve=function(callback){
-	this.rotateByOrder(this.cubeData.regularSolve(),callback)
+Cube.prototype.playSolve=function(outputMethod,callback){
+	this.rotateByOrder(this.cubeData.regularSolve(outputMethod),callback)
 }

@@ -262,3 +262,34 @@ var bottomCornerBlockData=[
 
 var middleEdgeData
 middleEdgeData=bottomCornerBlockData
+
+//for OperateList change
+var rotateOfRotate={
+	X:{R:"R",Ri:"Ri",L:"L",Li:"Li",U:"F",Ui:"Fi",D:"B",Di:"Bi",F:"D",Fi:"Di",B:"U",Bi:"Ui",X:"X",Xi:"Xi",Y:"Z",Yi:"Zi",Z:"Yi",Zi:"Y"},
+	Y:{R:"B",Ri:"Bi",L:"F",Li:"Fi",U:"U",Ui:"Ui",D:"D",Di:"Di",F:"R",Fi:"Ri",B:"L",Bi:"Li",X:"Zi",Xi:"Z",Y:"Y",Yi:"Yi",Z:"X",Zi:"Xi"},
+	Z:{R:"U",Ri:"Ui",L:"D",Li:"Di",U:"L",Ui:"Li",D:"R",Di:"Ri",F:"F",Fi:"Fi",B:"B",Bi:"Bi",X:"Y",Xi:"Yi",Y:"Xi",Yi:"X",Z:"Z",Zi:"Zi"},
+	Xi:{R:"R",Ri:"Ri",L:"L",Li:"Li",U:"B",Ui:"Bi",D:"F",Di:"Fi",F:"U",Fi:"Ui",B:"D",Bi:"Di",X:"X",Xi:"Xi",Y:"Zi",Yi:"Z",Z:"Y",Zi:"Yi"},
+	Yi:{R:"F",Ri:"Fi",L:"B",Li:"Bi",U:"U",Ui:"Ui",D:"D",Di:"Di",F:"L",Fi:"Li",B:"R",Bi:"Ri",X:"Z",Xi:"Zi",Y:"Y",Yi:"Yi",Z:"Xi",Zi:"X"},
+	Zi:{R:"D",Ri:"Di",L:"U",Li:"Ui",U:"R",Ui:"Ri",D:"L",Di:"Li",F:"F",Fi:"Fi",B:"B",Bi:"Bi",X:"Yi",Xi:"Y",Y:"X",Yi:"Xi",Z:"Z",Zi:"Zi"},
+}
+
+var turnToXZU={
+	R:["Zi","U","Z"],
+	Ri:["Zi","Ui","Z"],
+	L:["Z","U","Zi"],
+	Li:["Z","Ui","Zi"],
+	U:["U"],
+	Ui:["Ui"],
+	D:["Z","Z","U","Z","Z"],
+	Di:["Z","Z","Ui","Z","Z"],
+	F:["X","U","Xi"],
+	Fi:["X","Ui","Xi"],
+	B:["X","U","Xi"],
+	Bi:["X","Ui","Xi"],
+	X:["X"],
+	Xi:["Xi"],
+	Y:["Z","X","Zi"],
+	Yi:["Z","Xi","Zi"],
+	Z:["Z"],
+	Zi:["Zi"]
+}

@@ -36,9 +36,9 @@ Cube.prototype.setUi=function(){
 			for(var i=0;i<buttonList.length;i++){
 				buttonList[i].disabled=true
 			}
-			var ans=this.cubeData.regularSolve()
+			var ans=this.cubeData.regularSolve("simplify")
 			document.getElementById("output").innerText="Answer is:\n"+ans.join(" ")
-			this.playSolve(function(){
+			this.playSolve("simplify",function(){
 				var buttonList=document.getElementsByClassName("button")
 				for(var i=0;i<buttonList.length;i++){
 					buttonList[i].disabled=false

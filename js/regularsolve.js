@@ -1,5 +1,5 @@
-CubeData.prototype.regularSolve=function(){
-	var rotateList=[]
+CubeData.prototype.regularSolve=function(outputMethod){
+	var rotateList=new OperatorList()
 	
 	var centerBlockPositionNum=9*this.data[1][0][1].position.x+3*this.data[1][0][1].position.y+this.data[1][0][1].position.z
 	switch(centerBlockPositionNum){
@@ -9,20 +9,20 @@ CubeData.prototype.regularSolve=function(){
 			this.rotate("Z")
 			break
 		case 1:
-			rotateList.push("Z")
-			this.rotate("Z")
-			break
-		case -1:
-			rotateList.push("Zi")
-			this.rotate("Zi")
-			break
-		case 9:
 			rotateList.push("Xi")
 			this.rotate("Xi")
 			break
-		case -9:
+		case -1:
 			rotateList.push("X")
 			this.rotate("X")
+			break
+		case 9:
+			rotateList.push("Z")
+			this.rotate("Z")
+			break
+		case -9:
+			rotateList.push("Zi")
+			this.rotate("Zi")
 			break
 		case -3:
 			break
@@ -48,7 +48,7 @@ CubeData.prototype.regularSolve=function(){
 			break
 		default:
 	}
-	
+
 	for(var i=0;i<bottomMiddleBlockData.length;i++){
 		var bottomMiddleBlockOriginalPosition={x:bottomMiddleBlockData[i].x,z:bottomMiddleBlockData[i].z,y:-1}
 		var bottomMiddleBlockPosition=this.data[bottomMiddleBlockOriginalPosition.x+1][bottomMiddleBlockOriginalPosition.y+1][bottomMiddleBlockOriginalPosition.z+1].position
@@ -235,7 +235,7 @@ CubeData.prototype.regularSolve=function(){
 		rotateList.push("Y")
 		this.rotate("Y")
 	}
-	
+
 	for(var i=0;i<middleEdgeData.length;i++){
 		var middleEdgeBlockOriginalPosition={x:middleEdgeData[i].x,z:middleEdgeData[i].z,y:0}
 		var middleEdgeBlockPosition=this.data[middleEdgeBlockOriginalPosition.x+1][middleEdgeBlockOriginalPosition.y+1][middleEdgeBlockOriginalPosition.z+1].position
@@ -469,6 +469,7 @@ CubeData.prototype.regularSolve=function(){
 		this.rotate("U")
 	}
 	
+	rotateList[outputMethod]()
 	this.update()
 	return rotateList
 }
