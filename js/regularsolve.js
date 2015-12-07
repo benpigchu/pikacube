@@ -242,7 +242,7 @@ CubeData.prototype.regularSolve=function(){
 		var finishFlag3=false
 		
 		if(middleEdgeBlockPosition.y==0){
-			if(middleEdgeBlockPosition.x!=1||middleEdgeBlockPosition.y!=1||this.faceData.f[1][2]!=this.faceData.f[1][1]){
+			if(middleEdgeBlockPosition.x!=1||middleEdgeBlockPosition.z!=1||this.faceData.f[1][2]!=this.faceData.f[1][1]){
 				var middleEdgePositionNum=3*middleEdgeBlockPosition.x+middleEdgeBlockPosition.z
 				switch(middleEdgePositionNum){
 					case 2:
