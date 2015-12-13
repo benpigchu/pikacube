@@ -4,8 +4,8 @@ A WebGL magic cube with THREE.js
 As part of mega-homework of FOP
 
 ## About input method
-### TWD method
-The TWD method comes from [MagicCube by Twd2](https://github.com/twd2/MagicCube).
+### TWD2 method
+The TWD2 method comes from [MagicCube by twd2](https://github.com/twd2/MagicCube).
 
 This method uses characters to show colors: R for red, G for green, B for blue, Y for yellow, W for white, O for orange, and - for invisible.
 
@@ -19,6 +19,6 @@ For example, a completed cube may be output as below:-BO--Y-B---Y-B-R-Y-BO----B-
 This method is similar to the TWD method but uses different order of faces and blocks: the order of faces is right, left, up, down, front, back, and the order of blocks is (0,0,0) (0,0,1) (0,0,2) (0,1,0) (0,1,1) (0,1,2) (0,2,0) (0,2,1) (0,2,2) (1,0,0) (1,0,1) (1,0,2) (1,1,0) (1,1,1) (1,1,2) (1,2,0) (1,2,1) (1,2,2) (2,0,0) (2,0,1) (2,0,2) (2,1,0) (2,1,1) (2,1,2) (2,2,0) (2,2,1) (2,2,2)
 
 ## Thanks
-Thanks [Twd2](https://github.com/twd2) who inspired me to make a big news like this. Also thanks for his TWD method and his test data.
+Thanks [twd2](https://github.com/twd2) who inspired me to make a big news like this. Also thanks for his TWD2 method and his test data.
 
 Special thanks [THREE.js](http://threejs.org) by mrdoob and other developers, this project won't be complete without that.
