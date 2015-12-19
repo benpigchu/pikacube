@@ -59,7 +59,7 @@ CubeData.prototype.updateLayout=function(){
 			}
 		}
 	}
-	for(var i=0;i<faceList.length;i++) {
+	for(var i=0;i<faceList.length;i++){
 		for(var j=-1;j<2;j++){
 			for(var k=-1;k<2;k++){
 				var faceBlockPosition=faceDataSrc[faceList[i]][j+1][k+1]
@@ -79,7 +79,7 @@ CubeData.prototype.update=function(){
 			}
 		}
 	}
-	for(var i=0;i<faceList.length;i++) {
+	for(var i=0;i<faceList.length;i++){
 		for(var j=-1;j<2;j++){
 			for(var k=-1;k<2;k++){
 				var faceBlockPosition=faceDataSrc[faceList[i]][j+1][k+1]

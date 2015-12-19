@@ -3,6 +3,9 @@ A WebGL magic cube with THREE.js
 
 As part of mega-homework of FOP
 
+## Notice
+This project is still using ES5, and may be rewrite into ES6 when browsers generally support it.
+
 ## About input method
 ### TWD2 method(TWD)
 The TWD2 method(TWD) comes from [MagicCube by twd2](https://github.com/twd2/MagicCube).
