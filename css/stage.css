@@ -10,11 +10,11 @@ h1 {margin:0;border-bottom:solid 1px #777;padding-bottom:8px;margin-bottom:8px}
 select {height:24px}
 .config {width:173.75px}
 #inputData {width:100%;margin-top:8px;margin-bottom:4px}
-#inData {width:243px;height:24px;box-sizing:border-box}
-#method {height:24px;width:60px}
+#inData {width:243px;height:24px;box-sizing:border-box;width:213px}
+#method {height:24px;width:90px}
 #load {height:24px;width:40px;display:inline-block;text-align:center;box-sizing:border-box}
 
 .rotate {width:24px;height:24px;margin-top:4px}
 .no-rotate {height:24px;width:96px;margin-top:4px}
 
-#output {width:100%;height:300px;box-sizing:border-box;border:solid 1px #777;padding:8px;margin-top:8px;overflow:auto}
+#output {width:100%;height:300px;box-sizing:border-box;border:solid 1px #777;padding:8px;margin-top:8px;overflow:auto;word-wrap:break-word}

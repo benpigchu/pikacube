@@ -186,6 +186,34 @@ CubeData.prototype.outputAsTWDLikeFormat=function(axisOrder,faceOrder){
 	return output
 }
 
+CubeData.prototype.loadFromFaceOrder=function(data,faceOrder){
+	if(faceOrder==undefined){faceOrder=faceList}
+	var dataInTWDLike
+	dataInTWDLike=new Array(162)
+	for(var i=0;i<dataInTWDLike.length;i++){dataInTWDLike[i]="-"}
+	for(var i=0;i<faceOrder.length;i++){
+		for(var j=0;j<9;j++){
+			dataInTWDLike[faceToBPCMethod[faceOrder[i]].index+6*faceToBPCMethod[faceOrder[i]].position[j]]=data[9*i+j]
+		}
+	}
+	dataInTWDLike=dataInTWDLike.join("")
+	console.log(dataInTWDLike)
+	this.updateFromTWDLikeFormat(dataInTWDLike)
+}
+
+CubeData.prototype.outputAsFaceOrder=function(faceOrder){
+	if(faceOrder==undefined){faceOrder=faceList}
+	var output=""
+	for(var i=0;i<faceOrder.length;i++){
+		for(var j=0;j<3;j++){
+			for(var k=0;k<3;k++){
+				output+=this.faceData[faceOrder[i]][j][k]
+			}
+		}
+	}
+	return output
+}
+
 CubeData.prototype.checkSoluable=function(){
 	var colorString=""
 	for(var i=0;i<faceList.length;i++){

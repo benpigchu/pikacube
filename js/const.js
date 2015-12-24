@@ -226,6 +226,16 @@ var anotherFace={
 	b:"f",
 }
 
+//for load from face order
+var faceToBPCMethod={
+	r:{index:0,position:[26,25,24,23,22,21,20,19,18]},
+	l:{index:1,position:[6,7,8,3,4,5,0,1,2]},
+	u:{index:2,position:[6,15,24,7,16,25,8,17,26]},
+	d:{index:3,position:[2,11,20,1,10,19,0,9,18]},
+	f:{index:4,position:[8,17,26,5,14,23,2,11,20]},
+	b:{index:5,position:[24,15,6,21,12,3,18,9,0]},	
+}
+
 //for check soluable
 var directionFlag=[
 	true,false,true,false,
