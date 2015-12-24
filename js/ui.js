@@ -13,7 +13,9 @@ Cube.prototype.setUi=function(){
 				}else if(method=="twd"){
 					this.cubeData.updateFromTWDLikeFormat(data,"fblrud")
 				}else if(method=="faceOrder"){
-					this.cubeData.loadFromFaceOrder(data)
+					this.cubeData.loadFromFaceOrder(data,"rludfb")
+				}else if(method=="xu"){
+					this.cubeData.loadFromFaceOrder(data,"fblrud")
 				}
 				this.turnToData(function(){
 					document.getElementById("output").innerText="Loaded"
@@ -61,6 +63,8 @@ Cube.prototype.setUi=function(){
 				data=this.cubeData.outputAsTWDLikeFormat("zyx","fblrud")
 			}else if(method=="faceOrder"){
 				data=this.cubeData.outputAsFaceOrder("rludfb")
+			}else if(method=="xu"){
+				data=this.cubeData.outputAsFaceOrder("fblrud")
 			}
 			document.getElementById("output").innerText="Export as "+method+" method:\n"+data
 		}

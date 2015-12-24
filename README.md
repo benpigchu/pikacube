@@ -4,7 +4,7 @@ A WebGL magic cube with THREE.js
 As part of mega-homework of FOP
 
 ## Notice
-This project is still using ES5, and may be rewrite into ES6 when browsers generally support it.
+This project is still using ES5, and may be rewriten into ES6 when browsers generally support it.
 
 ## About input method
 ### TWD2 method(TWD)
@@ -62,6 +62,9 @@ This method use 9 letters strings to encode colors of faces, use the block order
 For example, a completed cube may be output as:
 
 	RRRRRRRRROOOOOOOOOYYYYYYYYYWWWWWWWWWBBBBBBBBBGGGGGGGGG
+
+### XuBoss method(XuBoss)
+This method is similar to the FaceOrder method but uses different order of faces: the order of faces is right, left, up, down, front, back.
 
 ## Thanks
 Thanks [twd2](https://github.com/twd2) who inspired me to make a big news like this. Also thanks for his TWD2 method and his test data.
