@@ -111,7 +111,7 @@ CubeData.prototype.updateFromTWDLikeFormat=function(data,faceOrder){
 	var positionCheckList=[[[false,false,false],[false,false,false],[false,false,false]],[[false,false,false],[false,false,false],[false,false,false]],[[false,false,false],[false,false,false],[false,false,false]]]
 	
 	var checkRegExp=new RegExp("[^"+this.cube.colorChar.r+this.cube.colorChar.l+this.cube.colorChar.u+this.cube.colorChar.d+this.cube.colorChar.f+this.cube.colorChar.b+this.cube.colorChar.x+"]","g")
-	data.replace(checkRegExp,"")
+	data=data.replace(checkRegExp,"")
 	
 	if(data.length!=162){invalid()}
 	for(var k=0;k<27;k++) {
@@ -188,6 +188,8 @@ CubeData.prototype.outputAsTWDLikeFormat=function(axisOrder,faceOrder){
 
 CubeData.prototype.loadFromFaceOrder=function(data,faceOrder){
 	if(faceOrder==undefined){faceOrder=faceList}
+	var checkRegExp=new RegExp("[^"+this.cube.colorChar.r+this.cube.colorChar.l+this.cube.colorChar.u+this.cube.colorChar.d+this.cube.colorChar.f+this.cube.colorChar.b+"]","g")
+	data=data.replace(checkRegExp,"")
 	var dataInTWDLike
 	dataInTWDLike=new Array(162)
 	for(var i=0;i<dataInTWDLike.length;i++){dataInTWDLike[i]="-"}
