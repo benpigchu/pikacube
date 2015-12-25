@@ -21,7 +21,7 @@ For example, a completed cube may be output as below:
 	-BO--Y-B---Y-B-R-Y-BO----B-----B-R---BO-W--B--W--B-RW---O--Y-----Y---R-Y--O------------R----O-W-----W----RW-G-O--YG----YG--R-YG-O---G-----G--R--G-O-W-G---W-G--RW-
 
 ### BPC method(BPC)
-This method is similar to the TWD method but uses different order of faces and blocks: the order of faces is right, left, up, down, front, back, and the order of blocks is (0,0,0) (0,0,1) (0,0,2) (0,1,0) (0,1,1) (0,1,2) (0,2,0) (0,2,1) (0,2,2) (1,0,0) (1,0,1) (1,0,2) (1,1,0) (1,1,1) (1,1,2) (1,2,0) (1,2,1) (1,2,2) (2,0,0) (2,0,1) (2,0,2) (2,1,0) (2,1,1) (2,1,2) (2,2,0) (2,2,1) (2,2,2)
+This method is similar to the TWD2 method but uses different order of faces and blocks: the order of faces is right, left, up, down, front, back, and the order of blocks is (0,0,0) (0,0,1) (0,0,2) (0,1,0) (0,1,1) (0,1,2) (0,2,0) (0,2,1) (0,2,2) (1,0,0) (1,0,1) (1,0,2) (1,1,0) (1,1,1) (1,1,2) (1,2,0) (1,2,1) (1,2,2) (2,0,0) (2,0,1) (2,0,2) (2,1,0) (2,1,1) (2,1,2) (2,2,0) (2,2,1) (2,2,2)
 
 ### FaceOrder method(FaceOrder)
 Different from the two methods below, this method directly use color on faces to describe the cube.
